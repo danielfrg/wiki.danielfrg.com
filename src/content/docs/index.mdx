@@ -1,9 +1,9 @@
 ---
-title: knowledge
+title: My Knowledge Wiki
 description: A collection of notes on things I know
 # template: splash
 hero:
-  tagline: A collection of notes on things I know and reference docs
+  tagline: Personal wiki to share and document stuff I know
   # actions:
   #   - text: Example Guide
   #     link: /guides/example/
@@ -17,7 +17,11 @@ hero:
 import { Card, CardGrid } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
-  <Card title="All notes" icon="left-arrow">
-    Click on a page in the sidebar or type `/` to search
+  <Card title="Homelab" icon="rocket">
+    [My homelab setup: Hardware, software and how I manage
+    everything](/homelab/1-intro/)
+  </Card>
+  <Card title="My personal setup" icon="laptop">
+    [My setup on hardware and software](/reference-tech/1-my-setup/)
   </Card>
 </CardGrid>

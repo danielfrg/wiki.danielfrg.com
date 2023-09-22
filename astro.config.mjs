@@ -3,13 +3,31 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://wiki.danielfrg.com",
   integrations: [
     starlight({
-      title: "danielfrg wiki",
+      title: "knowledge",
+      sidebar: [
+        {
+          label: "Homelab",
+          autogenerate: { directory: "homelab" },
+        },
+        {
+          label: "Reference - Tech",
+          autogenerate: { directory: "reference-tech" },
+        },
+      ],
+      logo: {
+        src: "/public/apple-touch-icon.png",
+      },
       social: {
         github: "https://github.com/danielfrg/wiki.danielfrg.com",
         twitter: "https://twitter.com/danielfrg",
       },
+      customCss: [
+        // Relative path to your custom CSS file
+        "./src/styles/custom.css",
+      ],
       head: [
         {
           tag: "script",
@@ -36,12 +54,6 @@ export default defineConfig({
               gtag('config', 'G-QJX79Z48KP');`,
             defer: true,
           },
-        },
-      ],
-      sidebar: [
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
         },
       ],
     }),
