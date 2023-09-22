@@ -1,9 +1,12 @@
 ---
 title: This website
 description: How I build this website
+tags:
+  - coding
+  - writing
 ---
 
-This website is written in [Obsidian](https://obsidian.md/)
+This website is written in [Obsidian](https://obsidian.md)
 and all the source is in [GitHub](https://github.com/danielfrg/wiki.danielfrg.com).
 
 - I open the `src` folder in Obsidian as a Vault and write most stuff there
