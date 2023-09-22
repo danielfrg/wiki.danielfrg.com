@@ -16,6 +16,10 @@ export default defineConfig({
           label: "Reference - Tech",
           autogenerate: { directory: "reference-tech" },
         },
+        {
+          label: "Coding",
+          autogenerate: { directory: "coding" },
+        },
       ],
       logo: {
         src: "/public/apple-touch-icon.png",
