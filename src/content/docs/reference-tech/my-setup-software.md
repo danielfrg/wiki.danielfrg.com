@@ -8,7 +8,7 @@ Almost all the software is installed via `brew`.
 ## Core
 
 Browser:
-- For personal and my projects this changes a lot currently I am using Brave or Arc
+- For personal and my projects this changes a lot currently I am using Brave
 - I use Google Chrome for work related stuff
 
 Task Management: [Things](https://culturedcode.com/things/) - See [Task Management Software](../task-management-software).
