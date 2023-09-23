@@ -49,15 +49,12 @@ export default defineConfig({
         },
         {
           tag: "script",
-          attrs: {
-            content: `
+          content: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
               gtag('config', 'G-QJX79Z48KP');`,
-            defer: true,
-          },
         },
       ],
     }),
