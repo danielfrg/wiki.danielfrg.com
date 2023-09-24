@@ -37,7 +37,7 @@ Categories are broad and general, I don't any. Subcategories are more open to be
 	- Phone
 	- Internet
 	- Electricity
-	- Home (related purchaces, reparation)
+	- Home (related purchases, reparation)
 	- Health
 	- Tax
 - Other Expenses (non-recurrent things that are for my own good)
