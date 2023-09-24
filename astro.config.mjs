@@ -38,7 +38,6 @@ export default defineConfig({
           tag: "script",
           content: `
             function loadScript(callback ) {
-              console.log('loading script')
               var script = document.createElement( "script" )
               script.type = "text/javascript";
               script.src = "https://unpkg.com/medium-zoom@1.0.8/dist/medium-zoom.min.js";
@@ -52,18 +51,10 @@ export default defineConfig({
 
             // call the function...
             loadScript(function() {
-              console.log('script ready!');
               const images = document.querySelectorAll('.content img');
               console.log(images)
               mediumZoom(images);
             })`,
-        },
-        {
-          tag: "script",
-          attrs: {
-            src: "https://www.googletagmanager.com/gtag/js?id=G-QJX79Z48KP",
-            defer: true,
-          },
         },
         {
           tag: "script",
