@@ -7,6 +7,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "knowledge",
+      favicon: "/favicon.ico",
       sidebar: [
         {
           label: "Homelab",
@@ -33,6 +34,30 @@ export default defineConfig({
         "./src/styles/custom.css",
       ],
       head: [
+        {
+          tag: "script",
+          content: `
+            function loadScript(callback ) {
+              console.log('loading script')
+              var script = document.createElement( "script" )
+              script.type = "text/javascript";
+              script.src = "https://unpkg.com/medium-zoom@1.0.8/dist/medium-zoom.min.js";
+
+              script.onload = function() {
+                callback();
+              };
+
+              document.getElementsByTagName("head")[0].appendChild( script );
+            }
+
+            // call the function...
+            loadScript(function() {
+              console.log('script ready!');
+              const images = document.querySelectorAll('.content img');
+              console.log(images)
+              mediumZoom(images);
+            })`,
+        },
         {
           tag: "script",
           attrs: {
