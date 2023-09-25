@@ -1,6 +1,7 @@
 ---
 title: Create a public GCS bucket
 ---
+
 For hosting static websites.
 
 ```terraform
@@ -14,7 +15,7 @@ resource "google_storage_bucket" "cloud_danielfrg_com" {
     main_page_suffix = "index.html"
     not_found_page   = "404.html"
   }
-  
+
   // Optinally Add CORS policy
   cors {
     origin          = ["*"]
