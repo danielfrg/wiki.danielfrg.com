@@ -4,7 +4,7 @@ description: Software I have running on my home lab
 ---
 
 - [NocoDB](https://nocodb.com/)
-- [Apache Superset](https://superset.apache.org/)
+- [Metabase](https://www.metabase.com/)
 - [Builtkite](https://buildkite.com/) agent
   - Long running jobs or jobs that require access to the local network
     so I can't run those Github Actions

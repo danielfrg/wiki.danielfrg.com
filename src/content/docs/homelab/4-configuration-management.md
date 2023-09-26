@@ -30,7 +30,7 @@ dash.home.arpa. IN A 192.168.1.200
 jdownloader.home.arpa. IN A 192.168.1.200
 nocodb.home.arpa. IN A 192.168.1.200
 plex.home.arpa. IN A 192.168.1.200
-superset.home.arpa. IN A 192.168.1.200
+metabase.home.arpa. IN A 192.168.1.200
 transmission.home.arpa. IN A 192.168.1.200
 ```
 
