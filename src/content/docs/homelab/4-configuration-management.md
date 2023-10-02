@@ -22,7 +22,7 @@ I use the [`.home.arpa`](https://www.rfc-editor.org/rfc/rfc8375.html) special do
 
 In the Unity Security Gateway I configured the DNS to go primarily to a [CoreDNS](https://coredns.io/) server running in Kuberentes at `192.168.1.253` and secondary to `1.1.1.1`
 
-```
+```plaintext
 home.arpa. IN SOA dns.home.arpa. noc.dns.icann.com. 2015082541 7200 3600 1209600 3600
 nas.home.arpa. IN A 192.168.1.150
 storage.home.arpa. IN A 192.168.1.150
@@ -44,15 +44,27 @@ I can simply point all the DNS entries to the same IP address and Traefik routes
 
 Installed using helm.
 
-### Cloudflare tunnels: Expose services to the outside
+### Exposing services to the outside
 
-Since I manage my domains in Cloudflare I use its tunnels service and a secondary external domain to expose some services in case I need to acess them from outside my network. For example I can go do `https://services.example.com` to access NocoDB.
+I use Cloudflare to manage my domains and use other of it's services:
 
-This also runs inside a kubernetes container using the `cloudflare/cloudflared` image and some config files.
+- Tunnels to expose my self-hosted services domain.
+  For example I can go do `https://nocodb.example.com` to access NocoDB
+- I use Cloudflare Zero Trust to manage who can access my services (family and friends).
+  This way only valid traffic hits the server and it's totally secure
 
-## Managing the machines
+This also runs inside a kubernetes container using the `cloudflare/cloudflared`
+image and some config files.
 
-I use [Ansible](https://www.ansible.com/) to install Kubernetes and other software in the machines.
+Notes:
+
+- I have a secondary domain for my private stuff just to separete concerns
+- It's pretty crazy I don't pay for any of this, I will be happy to do it
+  but the free tiers are so good I don't have to
+
+## Managing the servers
+
+I use [Ansible](https://www.ansible.com) to install Kubernetes and other software in the machines.
 
 - I keep its use to a minimal and try to keep everything else in Kubernetes + Terraform
 - Roles used:
