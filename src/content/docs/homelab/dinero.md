@@ -2,13 +2,13 @@
 title: "Dinero: How I manage my finances"
 ---
 
-I have built my own personal finance system like Mint/YNAB. I call it `[dinero]`(https://github.com/danielfrg/dinero) (money in spanish). I use it to manage my personal finances and my small business.
+I have built my own personal finance system like Mint/YNAB. I call it `[dinero]`(https://github.com/danielfrg/dinero) (money in spanish). I use it to manage my personal and my small business finances.
 
-It's a set of simple scripts that use [Plaid](https://plaid.com/) to get data from my banks and [NocoDB](https://nocodb.com/) to store the data. I also use [Metabase](https://www.metabase.com/) to build some simple dashboards from the data. I also have a couple of Jupyter Notebooks with extra analysis I run sporadically .
+It's a set of simple scripts that use [Plaid](https://plaid.com/) to get data from my banks Posgres to store the data and [NocoDB](https://nocodb.com/) to visualize it. I also use [Metabase](https://www.metabase.com/) to build some dashboards from the data and a couple of Jupyter Notebooks with extra analysis I run sporadically.
 
 I have indexed all the data since 2012 (the year I moved to the US) and the data matches perfectly to my current bank statements in all my accounts.
 
-- I did a backfill parsing PDFs in 2019-2020 when I started using `dinero`
+- I did a backfill parsing PDFs in 2019 when I started using `dinero`
 
 ## Screenshots
 
@@ -29,36 +29,36 @@ I created those myself based on my needs. `dinero` uses simple rules to match tr
 Categories are broad and general, I don't any. Subcategories are more open to be added.
 
 - Income
-  - Salary
-  - 401k
-  - Interest
+    - Salary
+    - 401k
+    - Interest
 - Living Expenses
-  - Housing
-  - Groceries
-  - Food (going out)
-  - Transportation
-  - Phone
-  - Internet
-  - Electricity
-  - Home (related purchases, reparation)
-  - Health
-  - Tax
+    - Housing
+    - Groceries
+    - Food (going out)
+    - Transportation
+    - Phone
+    - Internet
+    - Electricity
+    - Home (related purchases, reparation)
+    - Health
+    - Tax
 - Other Expenses (non-recurrent things that are for my own good)
-  - Services
-  - Education
-  - Software
-  - Hardware
-  - Hobbies
+    - Services
+    - Education
+    - Software
+    - Hardware
+    - Hobbies
 - Non-Essentials
-  - Shopping (in general)
-  - YouTube Premium
-  - Netflix
-  - Amazon Prime
-  - Games
-  - Entertainment (other)
-  - Clothing
-  - Gifts
-  - Other (general social activities usually go here)
+    - Shopping (in general)
+    - YouTube Premium
+    - Netflix
+    - Amazon Prime
+    - Games
+    - Entertainment (other)
+    - Clothing
+    - Gifts
+    - Other (general social activities usually go here)
 
 ## Why NocoDB?
 
