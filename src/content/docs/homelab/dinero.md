@@ -29,36 +29,36 @@ I created those myself based on my needs. `dinero` uses simple rules to match tr
 Categories are broad and general, I don't any. Subcategories are more open to be added.
 
 - Income
-    - Salary
-    - 401k
-    - Interest
+  - Salary
+  - 401k
+  - Interest
 - Living Expenses
-    - Housing
-    - Groceries
-    - Food (going out)
-    - Transportation
-    - Phone
-    - Internet
-    - Electricity
-    - Home (related purchases, reparation)
-    - Health
-    - Tax
+  - Housing
+  - Groceries
+  - Food (going out)
+  - Transportation
+  - Phone
+  - Internet
+  - Electricity
+  - Home (related purchases, reparation)
+  - Health
+  - Tax
 - Other Expenses (non-recurrent things that are for my own good)
-    - Services
-    - Education
-    - Software
-    - Hardware
-    - Hobbies
+  - Services
+  - Education
+  - Software
+  - Hardware
+  - Hobbies
 - Non-Essentials
-    - Shopping (in general)
-    - YouTube Premium
-    - Netflix
-    - Amazon Prime
-    - Games
-    - Entertainment (other)
-    - Clothing
-    - Gifts
-    - Other (general social activities usually go here)
+  - Shopping (in general)
+  - YouTube Premium
+  - Netflix
+  - Amazon Prime
+  - Games
+  - Entertainment (other)
+  - Clothing
+  - Gifts
+  - Other (general social activities usually go here)
 
 ## Why NocoDB?
 
