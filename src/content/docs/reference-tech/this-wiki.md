@@ -15,5 +15,5 @@ and all the source is in [GitHub](https://github.com/danielfrg/wiki.danielfrg.co
 It is a static site generator build using [Astro Starlight](https://starlight.astro.build/).
 
 - This lets me use JS components as needed, for example in Svelte
-- Website is hosted in [Firebase](https://firebase.google.com/)
+- Website is hosted in [Cloudflare Pages](https://pages.cloudflare.com/)
 - CI uses [GitHub Actions](https://github.com/danielfrg/wiki.danielfrg.com/actions)
