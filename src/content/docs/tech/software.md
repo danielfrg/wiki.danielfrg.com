@@ -8,20 +8,19 @@ Almost all the software is installed via `brew`.
 
 ## Core
 
-Browser:
+Window Management: [yabai](https://github.com/koekeishiya/yabai)
 
-- For personal and my projects this changes a lot currently I am using Brave
-- I use Google Chrome for work related stuff
+Browser:Arc
 
-Task Management: [Things](https://culturedcode.com/things/) - See [Task Management Software](../task-management-software).
+Task Management: [Things](https://culturedcode.com/things/). See [Task Management Software](../task-management-software).
 
-Writing: [Obsidian](https://obsidian.md) - See [Writing Software](../writing-software).
+Writing: [iA Writer](https://ia.net) - See [Writing](../writing).
 
 Password management and 2FA: [1Password](https://1password.com/)
 
 - Also use an yubikey as 2FA for some sites
 
-I use Google for all my personal data. All my files are in Google Drive, Google Photos and so on. See [Sync](../keeping-sync.md).
+I use Google for all my personal data. All my files are in Google Drive, Google Photos and so on. See [Sync](../folder-structure).
 
 Clipboard manager: [Maccy](https://maccy.app/)
 
@@ -31,13 +30,11 @@ Screenshots: [Cleanshot](https://cleanshot.com/)
 
 ## Raycast
 
-Mostly used for:
-
-- Windows Management:
-  - Mainly: ctrl + opt + arrows
-- Quickly open Github Repos
-- Open folders and Google Drive in finder
-- Create a new things entry
+- Launcher
+- Quickly open go-links and Github repos
+- Open folders in finder
+- Create a new Things tasks
+- (minimal) Windows Management
 
 Notes:
 
@@ -74,5 +71,5 @@ Notes:
 
 ## Other
 
-- VLC
-- WhatsApp / Signal
+- Video: VLC but also using IINA a lot now
+- Messaging: WhatsApp / Signal

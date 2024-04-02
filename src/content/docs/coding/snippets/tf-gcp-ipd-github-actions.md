@@ -1,5 +1,5 @@
 ---
-title: Setup an Identity Pool for Github Actions
+title: Terraform - Setup an Identity Pool for Github Actions
 ---
 
 ## Variables

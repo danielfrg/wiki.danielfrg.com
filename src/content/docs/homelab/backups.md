@@ -4,18 +4,19 @@ title: Backups
 
 ## Storage
 
-I do a daily backup of my NAS to Backblaze B2.
-I simply configured it on Synology and it works great when I need to go
-back and get a file.
+I do a daily backup of my NAS to AWS S3.
 
-I would like to maybe have another back of just the plain files.
+- For software config files I use Synology backup
+    - It works great when I need to go back and some simple files
+- For media files I use rclone to run a daily backup to AWS S3 Glacier (TODO)
 
-Backblaze B2 UI is terrible but it's cheap and reliable
-
-## Github
+## Github repos
 
 I wrote a simple script
-[danielfrg/github-archive](https://github.com/danielfrg/github-archive)
-to download all my repos.
+[danielfrg/github-archive](https://github.com/danielfrg/github-archive) to download all my repos
 
-I run it on a schedule on [Buildkite](https://buildkite.com) and it saves it to the NAS.
+- I run it on a schedule on Github CI and it saves it to the NAS. Which is then backed up to AWS
+
+## Google drive and Photos
+
+Still need to figure out how to backup to the NAS

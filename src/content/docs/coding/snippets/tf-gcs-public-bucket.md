@@ -1,5 +1,5 @@
 ---
-title: Create a public GCS bucket
+title: Terraform - Create a public GCS bucket
 ---
 
 For hosting static websites.

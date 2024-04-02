@@ -1,5 +1,5 @@
 ---
-title: Google Drive
+title: Folder structure
 ---
 
 I use the [PARA Method](https://fortelabs.com/blog/para/) in my Google Drive so I structure looks like:

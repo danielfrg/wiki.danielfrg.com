@@ -14,8 +14,8 @@ export default defineConfig({
           autogenerate: { directory: "homelab" },
         },
         {
-          label: "Reference - Tech",
-          autogenerate: { directory: "reference-tech" },
+          label: "Tech",
+          autogenerate: { directory: "tech" },
         },
         {
           label: "Coding",
