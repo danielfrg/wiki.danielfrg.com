@@ -1,7 +1,7 @@
 {
   "name": "wiki.danielfrg.com",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -13,5 +13,9 @@
     "@astrojs/starlight": "^0.28.2",
     "astro": "^4.15.9",
     "sharp": "^0.32.5"
+  },
+  "volta": {
+    "node": "22.9.0",
+    "pnpm": "9.11.0"
   }
 }
