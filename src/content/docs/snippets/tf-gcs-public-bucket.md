@@ -31,5 +31,4 @@ resource "google_storage_bucket_iam_member" "cloud_danielfrg_com_public" {
   role   = "roles/storage.objectViewer"
   member = "allUsers"
 }
-
 ```

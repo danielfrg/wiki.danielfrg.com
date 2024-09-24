@@ -1,79 +1,42 @@
 ---
-title: Vim motions and commands
+title: "VIM: Learning journey"
 ---
 
-These are Vim motions I actually use in (mostly) the order I learned them.
+Documenting the process of learnig vim after using GUI code editors for 20
+years.
 
-## The basics
+Why?
 
-- Movement `h` - `j` - `k` -`l`
+- Learn and control about my tools
+- Having my **forever** setup
+  - I changed code editor so many times, i don't regret it one bit. I learned
+    from all of them but at one point you gotta consolidate and build shit
 
-```lua
-map('n', '<left>', '<cmd>echo "Use h to move!"<CR>')
-map('n', '<right>', '<cmd>echo "Use l to move!"<CR>')
-map('n', '<up>', '<cmd>echo "Use k to move!"<CR>')
-map('n', '<down>', '<cmd>echo "Use j to move!"<CR>')
-```
+## Start with a distro
 
-- Insert `i` and `a`. Also with capital to beginning and end of line `I` `A`
+I started with a distro but **do not** stay on a distro. Move to your own config
+after a couple of months.
 
-- Activate relative line numbers and use counts: `C<hjkl>` 
+- I used Lazy and NVChad (this one looks a lot better). I used that for good 3-6
+  months
+- Then I moved to my own based on
+  [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim/blob/master/init.lua)
 
-- `w` word forwards and `b` word backwards
+When moving out of a distro **do not** add all the plugins back. Also change as
+little of the default keybinding as possible.
 
-- `d` delete
-    1. Combine with words: `dw`
-    2. Combine with movement `5dj`
+- While I use my config on my laptop for 90% of the time (and I configure my
+  [dotfiles](https://github.com/danielfrg/dotfiles) on my servers). When I have
+  to go to a remote instance or conatiner with plain vim I want to be able to be
+  productive on it.
 
-- `y` to yank/copy and `p` to past
+Initial set of plugins:
 
-- `ciw` [c]hange [i]nner [w]ord
-- `ciW` [c]hange [i]nner [W](contiguous piece of text)
+- nvim-treesitter/nvim-treesitter
+- nvim-telescope/telescope.nvim
+- stevearc/oil.nvim
+- folke/which-key.nvim
+- colorscheme
+- (if tmux): christoomey/vim-tmux-navigator
 
-Stop here. Spend a lot of time just on these. Don’t do more for like at least 2 weeks.
-
-## Horizontal movements
-
-These took me a while to get used to, more than vertical movements.
-
-- `_` beginning of line, `$` end of line
--  `f<char>` [f]orward to the character
--  `t<char>` forward to just **before** the character
--  `F<char>` backwards to the character
--  `T<char>` forward to just **before** the character
-    - For all `f` and `t`: `;` next one - `,` previous one
-- `o` new line below and go in insert mode
-- `O` new line above and go in insert mode
-
-## Vertical movements
-
-- `<C-d`> half page up and `<C-u>` help page up
-
-```
--- better move page up and down (keep cursor in the middle)
-map("n", "<C-d>", "<C-d>zz")
-map("n", "<C-u>", "<C-u>zz")
-```
-
-- `G` all the way to the bottom `gg` all the way top
-    - I usually confuse them
-
-- `/` search forward `?` search backwards
-    - Move to `n`  next and `N` previous
-
-```
--- Remove search highlights
-map("n", "<Esc>", ":noh<return><esc>")
-map("n", "<C-c>", ":noh<return><esc>")
-```
-
-- `*` on top of a word makes it search that word forwards and `#` backwards. Just do `*` and `N` to go backwards
-
-## Advanced
-
-- Select inside something
-    - Select a word `viw` - You can be anywhere in the word
-    - Select everything inside `{}` = `vi{`
-    - Select everything inside `{}` (including them)= `va{`
-    - Works with yank as well: `yi{` Copy everything inside `{}`
-- `o` in Visual mode toggles the position from top to bottom
+That's it. Use that for 1 week. Yeah, no LSP here.

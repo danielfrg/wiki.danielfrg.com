@@ -78,7 +78,8 @@ resource "google_service_account_iam_member" "github_actions_workload_identity_r
 
 Use this two values to configure the Github Actions
 
-- Both the SA and IDP are sensitive but not secret. I still put then as Github Secrets.
+- Both the SA and IDP are sensitive but not secret. I still put then as Github
+  Secrets.
 
 ```Terraform
 output "workload_identity_provider" {
