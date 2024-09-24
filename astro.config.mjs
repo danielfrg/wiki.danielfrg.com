@@ -21,6 +21,10 @@ export default defineConfig({
           label: "Coding",
           autogenerate: { directory: "coding" },
         },
+        {
+          label: "Code Snippers",
+          autogenerate: { directory: "snippets" },
+        },
       ],
       logo: {
         src: "/public/apple-touch-icon.png",

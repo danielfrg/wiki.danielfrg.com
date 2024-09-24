@@ -23,24 +23,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up pnpm
-        uses: pnpm/action-setup@v3
+      # Until 2.0 is released
+      - uses: denoland/setup-deno@v1
         with:
-          version: 8
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
+          deno-version: rc
 
       - name: Install JS dependencies
         run: |
-          pnpm install
+          deno install
 
       - name: Build website
         run: |
-          pnpm run build
+          deno run build
         env:
           ASTRO_TELEMETRY_DISABLED: 1
 

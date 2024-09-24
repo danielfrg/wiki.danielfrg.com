@@ -10,11 +10,11 @@ Compute:
   - It runs all the services just fine
 - 1 RapsberryPi 5
 
-
 Storage:
 
 - [Synology DS418play NAS Disk Station, 4-bay, 2GB DDR3L](https://www.amazon.com/gp/product/B075ZNKCK4/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-  - 3 x [Seagate IronWolf 4TB](https://www.amazon.com/gp/product/B07H289S79/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+  - 3 x
+    [Seagate IronWolf 4TB](https://www.amazon.com/gp/product/B07H289S79/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
 Network. It’s all based on Mikrotik:
 
@@ -29,7 +29,7 @@ Cabinet:
 
 ![](../../../assets/homelab/cabinet-photo.jpg)
 
-
 ## Notes
 
-- I used Unifi for the longest time. Mikrotik is a bit harder to use but totally worth it
+- I used Unifi for the longest time. Mikrotik is a bit harder to use but totally
+  worth it

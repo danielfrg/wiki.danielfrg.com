@@ -2,7 +2,8 @@
 title: Folder structure
 ---
 
-I use the [PARA Method](https://fortelabs.com/blog/para/) in my Google Drive so I structure looks like:
+I use the [PARA Method](https://fortelabs.com/blog/para/) in my Google Drive so
+I structure looks like:
 
 - 1 Projects (stuff I am currently working on)
 - 2 Areas (current personal stuff)

@@ -12,7 +12,8 @@ Window Management: [yabai](https://github.com/koekeishiya/yabai)
 
 Browser:Arc
 
-Task Management: [Things](https://culturedcode.com/things/). See [Task Management Software](../task-management-software).
+Task Management: [Things](https://culturedcode.com/things/). See
+[Task Management Software](../task-management-software).
 
 Writing: [iA Writer](https://ia.net) - See [Writing](../writing).
 
@@ -20,7 +21,8 @@ Password management and 2FA: [1Password](https://1password.com/)
 
 - Also use an yubikey as 2FA for some sites
 
-I use Google for all my personal data. All my files are in Google Drive, Google Photos and so on. See [Sync](../folder-structure).
+I use Google for all my personal data. All my files are in Google Drive, Google
+Photos and so on. See [Sync](../folder-structure).
 
 Clipboard manager: [Maccy](https://maccy.app/)
 
@@ -45,12 +47,14 @@ Notes:
 
 ## Keyboards / Hotkeys
 
-I use [Karabiner](https://karabiner-elements.pqrs.org) to do basic changes to the keyboard
+I use [Karabiner](https://karabiner-elements.pqrs.org) to do basic changes to
+the keyboard
 
 - CapsLock to Hyper / Escape
 - Hyper + HJKL = Arrows
 
-Then in [Keyboard Maestro](https://www.keyboardmaestro.com/) I use the Hyper key to do more stuff, for example:
+Then in [Keyboard Maestro](https://www.keyboardmaestro.com/) I use the Hyper key
+to do more stuff, for example:
 
 - Window selection:
   - Hyper + F = Open or show Browser
@@ -67,7 +71,8 @@ Then in [Keyboard Maestro](https://www.keyboardmaestro.com/) I use the Hyper key
 
 Notes:
 
-- I am still on version 7 and works great. When it stops working I will upgrade my license
+- I am still on version 7 and works great. When it stops working I will upgrade
+  my license
 
 ## Other
 
