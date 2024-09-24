@@ -26,6 +26,7 @@ map('n', '<down>', '<cmd>echo "Use j to move!"<CR>')
 - `w` word forwards and `b` word backwards
 
 - `d` delete
+
   1. Combine with words: `dw`
   2. Combine with movement `5dj`
 
@@ -65,6 +66,7 @@ map("n", "<C-u>", "<C-u>zz")
 ```
 
 - `G` all the way to the bottom `gg` all the way top
+
   - I usually confuse them
 
 - `/` search forward `?` search backwards

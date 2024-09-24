@@ -1,4 +1,4 @@
-name: pre-commit
+name: check
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
   pull_request:
 
 concurrency:
-  group: pre-commit-${{ github.head_ref }}
+  group: check-${{ github.head_ref }}
   cancel-in-progress: true
 
 env:
@@ -22,21 +22,13 @@ jobs:
       - name: Set up pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 8
+          version: 9
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 22
           cache: "pnpm"
 
       - name: Install dependencies
         run: pnpm install
-
-      - uses: actions/setup-python@v4
-        with:
-          python-version: "3.10"
-
-      - uses: pre-commit/action@v3.0.0
-        env:
-          SKIP: actionlint
